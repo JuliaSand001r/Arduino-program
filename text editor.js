@@ -25,6 +25,23 @@ module.exports = {
     '**/*.{js,jsx,ts,tsx}',
     '!**/@next/ApiReq/*',
 
+      {
+  "compilerOptions": {
+    "target": "es5",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": true,
+
+       "paths": {
+      "@types": ["./@next/types"],
+      "@/components/*": ["components/*"],
+      "@styles": ["./styles"],
+      "@utils": ["./@next/utils"],
+      "test-utils": ["./@next/utils/test.utils.tsx"],
+      "@ApiReq": ["./@next/ApiReq"],
+      "@hooks": ["./@next/hooks"],
+
 const nextConfig = {
   compiler: {
     emotion: true,
@@ -35,3 +52,8 @@ const nextConfig = {
   images: {
     domains: ['ipfs.io']
   },
+
+
+
+
+    
