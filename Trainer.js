@@ -17,7 +17,7 @@ publishComposite('chain.status', function(){
                 find(chain){
                     return Validators.find(
                         {},}}}}}}
-
+// no comments can be left
 
 Trainer.methods({
     'chain.getConsensusState': function(){
